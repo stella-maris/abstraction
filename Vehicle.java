@@ -208,7 +208,7 @@ public class Vehicle
     {
         DecimalFormat formatter = new DecimalFormat("$0.00");
         DecimalFormat percentFormatter = new DecimalFormat("0%");
-
+        System.out.println("*----VEHICLE DETAILS----*");
         System.out.println("Jalopies Are Us Vehicle Summary: ");
         System.out.println("Vehicle: " + year + " " + make + " " + model);
         System.out.println("Stock Code:" + stockCode);

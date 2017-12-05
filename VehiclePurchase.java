@@ -92,7 +92,8 @@ public class VehiclePurchase
     {
         DecimalFormat formatter = new DecimalFormat("$0.00");
         DecimalFormat percentFormatter = new DecimalFormat("0%");
-
+        
+        System.out.println("*--VEHICLE PURCHASED DETAILS--*");
         System.out.println("Customer: " + customer.getFirstName() + " " + customer.getLastName());
         System.out.println("Purchase Date: " + purchaseDate.getFullPurchaseDate());
         System.out.println("Vehicle Description: ");
@@ -105,5 +106,6 @@ public class VehiclePurchase
         {
             System.out.println("SERVICE PACKAGE NOT INCLUDED");
         }
+        Inventory.removeVehicle(vehiclePurchased.getStockCode());
     }
 }

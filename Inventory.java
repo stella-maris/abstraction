@@ -74,14 +74,13 @@ public class Inventory
     
     public void displaySearchResults(ArrayList<Vehicle> results)
     {
-        System.out.println("  MAKE  |  MODEL  |  YEAR  |  PRICE  ");
-        System.out.println("_____________________________________");
+        System.out.println("*--DISPLAY SEARCH RESULTS--*");
         for (Vehicle tempCar : results)
         {
-            System.out.print(tempCar.getMake() + "  |  ");
-            System.out.print(tempCar.getModel() +"  |  ");
-            System.out.print(tempCar.getYear() + "  |  ");
-            System.out.print(tempCar.getSellingPrice());
+            System.out.println(tempCar.getMake());
+            System.out.println(tempCar.getModel());
+            System.out.println(tempCar.getYear());
+            System.out.println(tempCar.getSellingPrice());
         }
 
     }
@@ -118,17 +117,18 @@ public class Inventory
     
     public void displayInventory ()
     {
-        System.out.println("  CODE  |  MAKE  |  MODEL  |  YEAR  |  PRICE  | COST  | PROFIT MARGIN");
-        System.out.println("----------------------------------------------------");
+        System.out.println("*--DISPLAY INVENTORY--*");
         for (Vehicle tempCar : vehicles)
         {
-            System.out.print(tempCar.getStockCode() + "  |  ");
-            System.out.print(tempCar.getMake() + "  |  ");
-            System.out.print(tempCar.getModel() +"  |  ");
-            System.out.print(tempCar.getYear() + "  |  ");
-            System.out.print(tempCar.getSellingPrice() + "  |  ");
-            System.out.print(tempCar.getdealerCost() + "  |  ");
-            System.out.print(tempCar.getProfitMargin());
+            System.out.println(tempCar.getStockCode());
+            System.out.println(tempCar.getMake());
+            System.out.println(tempCar.getModel());
+            System.out.println(tempCar.getYear());
+            System.out.println(tempCar.getSellingPrice());
+            System.out.println(tempCar.getdealerCost());
+            System.out.println(tempCar.getProfitMargin());
+            
+            System.out.println("*--------------------*");
         }
     }
 }
