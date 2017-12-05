@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=VehiclePurchase
+comment1.params=renter\ purchaseDate\ vehiclePurchased\ servicePackage
+comment1.target=VehiclePurchase(Customer,\ PurchaseDate,\ Vehicle,\ boolean)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ VehiclePurchase\n\ @param\ renter\ \ \ \ \ \ \ \ \ \ \ \ The\ customer\ purchasing\ a\ vehicle\n\ @param\ purchaseDate\ \ \ \ \ \ The\ date\ the\ vehicle\ is\ purchased\ in\ int\ yyyy,\ m,\ d.\n\ @param\ vehiclePurchased\ \ The\ vehicle\ that\ is\ purchased\n\ @param\ servicePackage\ \ \ \ Verifies\ whether\ a\ service\ package\ was\ purchased\n
+comment2.params=servicePackage
+comment2.target=void\ setServicePackage(boolean)
+comment3.params=
+comment3.target=boolean\ isServicePackage()
+comment3.text=\n\ @return\ the\ servicePackage\n
+comment4.params=
+comment4.target=Customer\ getCustomer()
+comment4.text=\n\ Get\ the\ customer\ information.\n\ @return\ customer\ Customer\ instance\ for\ this\ particular\ purchase.\n
+comment5.params=
+comment5.target=PurchaseDate\ getPurchaseDate()
+comment5.text=\n\ Get\ the\ purchase\ date\ of\ this\ vehicle.\n\ @return\ purchaseDate\ PurchaseDate\ instance\ for\ this\ particular\ purchase.\n
+comment6.params=
+comment6.target=Vehicle\ getVehiclePurchased()
+comment6.text=\n\ Get\ the\ vehicle\ purchased.\n\ @return\ vehiclePurchased\ \ \ \ Vehicle\ instance\ that\ was\ purchased.\n
+comment7.params=purchasePrice
+comment7.target=void\ calculatePurchasePrice(double)
+comment7.text=\n\ @param\ purchasePrice\ The\ purchasePrice\ to\ set\n
+comment8.params=
+comment8.target=void\ displayDetails()
+comment8.text=\n\ formats\ and\ displays\ all\ vehicle\ information.\n
+numComments=9

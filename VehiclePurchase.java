@@ -4,6 +4,7 @@
  *
  * @author Mary Lee
  * @version 1.0 2017-11-13
+ * @version 1.1 2017-12-03
  */
 import java.text.DecimalFormat;
 public class VehiclePurchase
@@ -35,6 +36,13 @@ public class VehiclePurchase
     {
         this.servicePackage = servicePackage;
     }
+    /**
+     * @return the servicePackage
+     */
+    public boolean isServicePackage()
+    {
+        return servicePackage;
+    }
     
     /**
      * Get the customer information.
@@ -63,12 +71,17 @@ public class VehiclePurchase
         return vehiclePurchased;
     }
     
+    /**
+     * @param purchasePrice The purchasePrice to set
+     */
     public void calculatePurchasePrice (double purchasePrice) 
     {
-        vehiclePurchased.setSellingPrice(purchasePrice);
+        //vehiclePurchased.setSellingPrice(purchasePrice);
+        vehiclePurchased.checkStandardSellingPrice(purchasePrice);
         if (servicePackage)
         {
-            vehiclePurchased.setSellingPrice(purchasePrice + SERVICE_FEE);
+            //vehiclePurchased.setSellingPrice(purchasePrice + SERVICE_FEE);
+            vehiclePurchased.setSellingPrice(vehiclePurchased.getSellingPrice() + SERVICE_FEE);
         }
     }
     
@@ -82,13 +95,8 @@ public class VehiclePurchase
 
         System.out.println("Customer: " + customer.getFirstName() + " " + customer.getLastName());
         System.out.println("Purchase Date: " + purchaseDate.getFullPurchaseDate());
-        System.out.println("Vehicle Description: Jalopies Are Us Vehicle Summary:");
-        System.out.println("Vehicle: " + vehiclePurchased.getYear() + " " + vehiclePurchased.getMake() + " " + vehiclePurchased.getModel());
-        System.out.println("Stock Code:" + vehiclePurchased.getStockCode());
-        System.out.println("Dealer Cost: " + formatter.format(vehiclePurchased.getdealerCost()));
-        System.out.println("Selling Price: " + formatter.format(vehiclePurchased.getSellingPrice()));
-        System.out.println("Profit Margin: " + percentFormatter.format(vehiclePurchased.getProfitMargin()));
-        System.out.println("Dollar Profit: " + formatter.format(vehiclePurchased.calculateProfit()));
+        System.out.println("Vehicle Description: ");
+        vehiclePurchased.printDetails();
         if (servicePackage)
         {
             System.out.println("SERVICE PACKAGE INCLUDED");

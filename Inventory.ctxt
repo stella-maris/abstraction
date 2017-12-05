@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Inventory
+comment1.params=
+comment1.target=Inventory()
+comment10.params=
+comment10.target=void\ displayInventory()
+comment2.params=vehicle
+comment2.target=void\ addVehicle(Vehicle)
+comment3.params=model
+comment3.target=void\ searchByModel(java.lang.String)
+comment4.params=year
+comment4.target=void\ searchByYear(int)
+comment5.params=minPrice\ maxPrice
+comment5.target=void\ searchByPrice(double,\ double)
+comment6.params=results
+comment6.target=void\ displaySearchResults(java.util.ArrayList)
+comment7.params=stockCode
+comment7.target=void\ removeVehicle(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ inventoryCount()
+comment8.text=\n\ @return\ \ A\ message\ that\ includes\ the\ number\ of\ vehicles\ currently\ in\ inventory\n
+comment9.params=
+comment9.target=java.lang.String\ inventoryValue()
+comment9.text=\n\ @return\ \ The\ formatted\ String\ that\ is\ the\ current\ total\ dollar\ value\ of\ all\ the\ Vehicles\ in\ inventory.\n
+numComments=11
